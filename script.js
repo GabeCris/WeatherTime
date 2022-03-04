@@ -134,7 +134,7 @@ const showWeather = (weather) => {
 
     let icon = weather.weather[0].icon;
     console.log(icon);
-    weatherLogoContainer.innerHTML = `<img src="/img/icons/${icon}.svg">`;
+    weatherLogoContainer.innerHTML = `<img src="./img/icons/${icon}.svg">`;
 
     inputSearch.value = "";
     let temp = `${Math.round(weather.main.temp)}`;
