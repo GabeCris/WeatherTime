@@ -194,7 +194,7 @@ body {
     border-bottom: 6px white solid;
     outline: none;
     color: rgb(255, 255, 255);
-    background-image: url(/img/tool-icon/pen.svg);
+    background-image: url(./img/tool-icon/pen.svg);
     background-repeat: no-repeat;
     background-position-y: center;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .box-content .hour {
-    background-image: url(/img/tool-icon/time.svg);
+    background-image: url(./img/tool-icon/time.svg);
     width: 150px;
 }
 
@@ -314,7 +314,7 @@ footer {
 
 .background-night {
     background: var(--bg-night);
-    background-image: url(/img/tool-icon/constallation.svg);
+    background-image: url(./img/tool-icon/constallation.svg);
 }
 
 @keyframes move-cloud-right {
