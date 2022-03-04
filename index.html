@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Time</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="initialize()">
+        <div class="container-flip">
+            <div class="container-front">
+                <img
+                    class="clouds clouds1"
+                    src="/img/tool-icon/cloud.svg"
+                    alt=""
+                />
+                <img
+                    class="clouds clouds2"
+                    src="/img/tool-icon/cloud-reverse.svg"
+                    alt=""
+                />
+                <img
+                    class="clouds clouds3"
+                    src="/img/tool-icon/cloud-reverse.svg"
+                    alt=""
+                />
+                <div class="container background-day">
+                    <header id="header">
+                        <img
+                            src="/img/tool-icon/logo-weather-time.svg"
+                            alt=""
+                        />
+                        <div class="date-info">
+                            <p class="hour-set">15:00h</p>
+                            <p class="date">25 / 01</p>
+                        </div>
+                    </header>
+                    <div class="box">
+                        <div class="flip">
+                            <div class="front">
+                                <div class="box-content box-front">
+                                    <h2 class="weather-description">
+                                        Chuva forte
+                                    </h2>
+                                    <div class="weather-icon">
+                                        <img
+                                            src="/img/icons/11d.svg"
+                                            alt="CHUVA"
+                                        />
+                                    </div>
+                                    <h1 class="temperature">19°C</h1>
+                                    <p class="city">New York - US</p>
+                                    <button class="button" onclick="newLocal()">
+                                        <img
+                                            src="/img/tool-icon/local.svg"
+                                            alt="LOCAL"
+                                        />
+                                        <p>Novo</p>
+                                    </button>
+                                    <p class="option">Ativar localização</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="box-content box-back">
+                                    <img src="/img/Logo.svg" alt="LOGO" />
+                                    <input
+                                        class="new-local"
+                                        type="text"
+                                        placeholder="Novo local"
+                                        maxlength="18"
+                                        onkeyup="validationLocal()"
+                                    />
+                                    <input
+                                        class="hour"
+                                        type="number"
+                                        value="12"
+                                        maxlength="2"
+                                        min="1"
+                                        max="24"
+                                        id="hour"
+                                        onkeyup="validationHour()"
+                                    />
+                                    <button
+                                        class="button search"
+                                        onclick="search()"
+                                    >
+                                        <img
+                                            src="/img/tool-icon/search.svg"
+                                            alt="procurar"
+                                        />
+                                        <p>Procurar</p>
+                                    </button>
+                                    <p class="option" onclick="cancelSearch()">
+                                        Cancelar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <a
+                            href="https://www.linkedin.com/in/gabriel-crisanto/"
+                            target="_blank"
+                        >
+                            <img src="/img/footer/linkedin.svg" alt="" />
+                        </a>
+                        <a href="https://github.com/GabeCris" target="_blank">
+                            <img src="/img/footer/github.svg" alt="" />
+                        </a>
+                        <img src="/img/footer/copyright.svg" alt="" />
+                    </footer>
+                </div>
+            </div>
+            <div class="container-back">
+                <div class="loading background-day">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="/img/tool-icon/logo-icon.svg" alt="" />
+                        </div>
+                        <div class="logo-name">
+                            <img src="/img/tool-icon/logo-name.svg" alt="" />
+                        </div>
+                    </div>
+                    <p>&copy; by GabeCris</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
